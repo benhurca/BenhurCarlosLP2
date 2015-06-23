@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: aula23062015, Configuration: Debug Any CPU ------
+1>  aula23062015 -> c:\users\alunoct\documents\visual studio 2013\Projects\aula23062015\aula23062015\bin\Debug\aula23062015.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
