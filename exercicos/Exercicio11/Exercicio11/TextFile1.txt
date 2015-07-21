@@ -1,0 +1,60 @@
+﻿Você e um grupo de amigos farão uma viagem. O problema é que são muitos amigos e muitos carros, e é preciso 
+organizar que pessoas irão em cada carro. As pessoas serão alocadas nos carros por ordem de chegada, ou 
+seja, quem pedir primeiro garante sua vaga na viagem.
+
+Você, como programador, se prontificou a resolver o problema.
+
+Você deve criar uma Console Application que funcione da seguinte maneira: Primeiro você deve ler a 
+quantidade de carros X. Em seguida, ler as informações dos X carros que serão disponibilizados para a 
+viagem, sendo elas: Um número identificador único (ou seja, um id que começa em 1), modelo, marca, placa e 
+capacidade de passageiros. O id não deve ser informado pelo usuário do programa, você deve programar a 
+solução para atribuir esses valores automaticamente.
+
+Depois de ler a lista de carros, você deve ler os pedidos de vaga em cada carro. Cada pedido acontece 
+informando o id de um carro. Você deve controlar a quantidade de vagas restantes em cada carro, e 
+informar se o carro ficar lotado, não permitindo a partir daí mais ninguém nesse carro.
+
+O programa encerra ao ler um pedido de alocação para o carro de id = -1 (que não existe) ou quando todos 
+os carros estiverem lotados.
+
+
+
+
+Exemplo de entrada:
+
+
+2
+Palio
+Fiat
+AAA-1234
+4
+Vectra
+Chevrolet
+BBB-1234
+3
+1
+2
+2
+2
+1
+2 --- Aqui mostrará carro lotado
+2 --- Aqui mostrará carro lotado
+1
+3 --- Aqui mostrará carro inválido
+-1
+
+
+
+Além das mensagens informativas ao longo da execução do programa, você deve exibir um relatório final no seguinte formato:
+
+
+
+Carro 1: Palio - Fiat (AAA-1234)
+Passageiros: 3
+Vagas restantes: 1
+
+Carro 2: Vectra - Chevrolet (BBB-1234)
+Passageiros: 3
+Carro lotado
+
+Total de pessoas na viagem: 6
