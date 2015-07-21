@@ -1,0 +1,28 @@
+﻿Construa uma WPF application que realizará um cadastro simples de carros.
+O programa terá apenas uma janela, e permitirá o cadastro dos seguintes campos:
+
+Modelo
+Placa
+Marca
+Ano
+Kilometragem
+Capacidade do tanque
+Potência
+
+Não é preciso salvar as informações para que elas não se percam após o encerramento 
+programa, mas todos os carros devem estar acessíveis e salvos enquanto o programa 
+estiver rodando.
+
+Você deverá criar uma classe "Carro", preocupando-se com o encapsulamento dos atributos.
+Todos os atributos deve ter em seus métodos Set uma verificação se o valor é válido 
+antes de guardar no objeto.
+
+Os carros ficarão em uma lista do tipo Carro, ou seja, uma List<Carro> (Como visto em 
+aula). É preciso cuidar para que novos cadastros não destruam a lista que já existe!
+
+===============================
+
+Na sua janela também deve existir um textbox e um botão "Buscar", que deve, ao ser clicado, 
+pegar o valor dessa textbox (placa de um carro), procurar na lista e exibir em um MessageBox
+CASO EXISTA UM CARRO COM ESSA PLACA JÁ CADASTRADO. Caso contrário, informe ao usuário que
+não existe.
