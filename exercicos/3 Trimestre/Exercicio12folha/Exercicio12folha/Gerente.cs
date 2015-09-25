@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace Exercicio12
 {
-    class Gerente : Funcionario
+    class Gerente:Funcionario
     {
+        
 
+            public string AreaAtuacao { get; set; }
 
-        public string AreaAtuacao { get; set; }
+          
 
+            public override double vale()
+            {
+                double valeal = _salario * (6.5 / 100);
 
+                if (valeal > 750)
+                {
+                    valeal = 750;
+                }
 
-        public override double vale()
-        {
-            double valeal = _salario * (6.5 / 100);
-            return valeal;
-
+                return valeal;
+            
         }
     }
 }
