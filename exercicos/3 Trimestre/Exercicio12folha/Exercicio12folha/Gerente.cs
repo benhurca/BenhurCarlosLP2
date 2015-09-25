@@ -8,10 +8,7 @@ namespace Exercicio12
 {
     class Gerente:Funcionario
     {
-        
-
-            public string AreaAtuacao { get; set; }
-
+       
           
 
             public override double vale()
