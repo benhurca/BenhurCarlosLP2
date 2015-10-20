@@ -96,7 +96,7 @@ namespace exercicio13BENHUR
                                 {
                                     if (reader.GetString(1) == consultani)
                                     {
-                                        Console.WriteLine("ID: {0}, Nome: {1}, Sobrenome: {2}",
+                                        Console.WriteLine("\nID: {0}, Nome: {1}, Sobrenome: {2}",
                                         reader.GetInt32(0),
                                         reader.GetString(1),
                                         reader.GetString(2));
