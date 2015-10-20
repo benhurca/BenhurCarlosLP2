@@ -16,17 +16,17 @@ namespace exercicio13BENHUR
             int op = 0;
             int vc = 0;
             MySqlConnection conn = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd=");
-        MySqlCommand command = new MySqlCommand();
+            MySqlCommand command = new MySqlCommand();
             command.Connection = conn;
             conn.Open();
 
-       while (op != 1 && op != 2)
+            while (op != 1 && op != 2)
             {
                 Console.Write("Cadastro e consulta de pessoas: Digite 1 para CADASTRAR e Digite 2 caso queira CONSULTAR: ");
-               op = int.Parse(Console.ReadLine());
+                op = int.Parse(Console.ReadLine());
                 Pessoa x = new Pessoa();
 
-if (op == 1)
+                if (op == 1)
                 {
                     Console.Write("Nome: ");
                     x.nome = Console.ReadLine();
@@ -45,9 +45,6 @@ if (op == 1)
                     command.ExecuteNonQuery();
                     op = 0;
                 }
-                
-
-
                 else if (op == 2)
                 {
                     int opconsulta = 0;
@@ -63,7 +60,7 @@ if (op == 1)
                         Console.Write("Digite 1 para consultar por NOME ou 2 para consultar por ID: ");
                         opconsulta = int.Parse(Console.ReadLine());
                        
-                         if (opconsulta == 2)
+                        if (opconsulta == 2)
                         {
                             Console.Write("Escolha o id a consultar: ");
                             consultani = Console.ReadLine();
@@ -89,9 +86,7 @@ if (op == 1)
                                 }
                             }
                         }
-
-
-                    else if (opconsulta == 1)
+                        else if (opconsulta == 1)
                         {
                             Console.Write("Escolha o NOME a consultar: ");
                             consultani = Console.ReadLine();
@@ -116,8 +111,8 @@ if (op == 1)
                             }
                         }
                        
-                       
                     }
+
                     reader.Close();
                     op = 0;
                 }
@@ -126,10 +121,9 @@ if (op == 1)
                 {
                     Console.WriteLine("número invalido digite outro. Digite 1 para cadastrar ou digite 2 para consultar.");
                 }
+
                 vc = 0;
             }
-
-
         }
     }
 }
